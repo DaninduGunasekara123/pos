@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dan POS System | Dashboard</title>
+    <link rel="shortcut icon" href=""/>
+    <link rel="stylesheet" href="css/danstyle.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="css/jquery-jvectormap.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <!--<link rel="stylesheet" href="mystyle.css">-->
+    <!--<script src="bootstrap.css"> </script>-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>P</b>OS</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>Dan-POS-System</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <i class="fas fa-navicon"></i>
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-bell"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <!-- -->
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <!-- Notifications: style can be found in dropdown.less -->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-sticky-note"></i>
+                            <span class="label label-warning">10</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <!---->
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tasks: style can be found in dropdown.less -->
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-flag"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 9 tasks</li>
+                            <!---->
+                            <li class="footer">
+                                <a href="#">View all tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <!--<img src="IMG_20180801_105342604.jpg" class="user-image" alt="User Image">-->
+                            <!--<span class="hidden-xs">Danindu Gunasekara</span>-->
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            >
+                        </ul>
+                    </li>
+                    <!-- Control Sidebar Toggle Button -->
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    </li>
+    <li>
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="IMG_20180801_105342604.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Danindu Gunasekara</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li id="dash">
+                        <a href="#dash" target="_parent">
+                            <i class="fas fa-tachometer-alt"></i> <span>Dashboard</span>
+                            <span class="pull-right-container">
+                            </span>
+                        </a>
+                    </li>
+                    <li id="customers">
+                        <a href="#customers" target="_parent">
+                            <i class="fas fa-users"></i>
+                            <span>Customers</span>
+                            <span class="pull-right-container">
+                                <span class="label label-primary pull-right">10000</span>
+
+                            </span>
+                        </a>
+                    </li>
+                    <li id="items">
+                        <a href="#items" target="_parent">
+                            <i class="fas fa-cubes"></i> <span>Items</span>
+                            <span class="pull-right-container">
+                            <span class="label label-primary pull-right">5000</span>
+                        </span>
+                        </a>
+                        </span>
+                    </li>
+                    <li id="orders">
+                        <a href="#orders" target="_parent">
+                            <i class="fas fa-shopping-cart"></i> <span>Orders</span>
+                            <span class="pull-right-container">
+                            <span class="label label-primary pull-right">1500</span>
+                        </span>
+                        </a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#employees" target="_parent">
+                            <i class="fas fa-user-tie"></i> <span>Employee</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+
+                    <li>
+                        <a href="#settings" target="_parent">
+                            <i class="fas fa-cogs"></i> <span>Settings</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-power-off"></i> <span>Logout</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+
+
+                    </span>
+
+                    </span>
+                    <!---->
+
+                    </li>
+
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+    </li>
+
+    <!--Content Wrapper. Contains page content-->
+    <div id="dashboard" class="content-wrapper">
+        <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+        <section class="content-header">
+            <h1>
+                Dashboard
+                <small>POS System 2.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>
+        </section>
+
+        <!--&lt;!&ndash; Main content &ndash;&gt;-->
+        <section class="content">
+            <!-- Info boxes -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-aqua"><img src="img/icons8-customer-100.png" width="75%"
+                                                                 height="75%"></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Customers</span>
+                            <span class="info-box-number">10000</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red"><img src="img/icons8-barcode-100.png" width="75%"
+                                                                height="75%"></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Items</span>
+                            <span class="info-box-number">5000</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+
+                <!-- fix for small devices only -->
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green"><img src="img/icons8-trolley-100.png" width="75%"
+                                                                  height="75%"></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Orders</span>
+                            <span class="info-box-number">1500</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-yellow"><img src="img/icons8-services-100%20(1).png" width="75%"
+                                                                   height="75%"></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Settings</span>
+                            <span class="info-box-number">Show</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!--&lt;!&ndash; /.row &ndash;&gt;-->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Monthly Sales Report</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                                </button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fa fa-wrench"></i></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                                        class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="text-center">
+                                        <strong>Sales: 1 Jan, 2015 - 30 Dec, 2015</strong>
+                                    </p>
+
+                                    <div class="chart">
+                                        <!-- Sales Chart Canvas -->
+                                        // <img src="img/chart%2001.jpeg" width="100%" height="65%">
+                                    </div>
+                                    <!-- /.chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <p class="text-center">
+                                        <strong>Goal Completion</strong>
+                                    </p>
+
+                                    <div class="progress-group">
+                                        <span class="progress-text">Add Products to Cart</span>
+                                        <span class="progress-number"><b>160</b>/200</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Complete Purchase</span>
+                                        <span class="progress-number"><b>310</b>/400</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress-group">
+                                        <span class="progress-text">Visit Premium Page</span>
+                                        <span class="progress-number"><b>480</b>/800</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress-group">
+                                        <span class="progress-text">Send Inquiries</span>
+                                        <span class="progress-number"><b>250</b>/500</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                                        <h5 class="description-header">$35,210.43</h5>
+                                        <span class="description-text">TOTAL REVENUE</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-yellow"><i
+                                                class="fa fa-caret-left"></i> 0%</span>
+                                        <h5 class="description-header">$10,390.90</h5>
+                                        <span class="description-text">TOTAL COST</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+                                        <h5 class="description-header">$24,813.53</h5>
+                                        <span class="description-text">TOTAL PROFIT</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block">
+                                        <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+                                        <h5 class="description-header">1200</h5>
+                                        <span class="description-text">Visit Customers</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Monthly Sales Report</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                                </button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fa fa-wrench"></i></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                                        class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="text-center">
+                                        <strong>Sales: 1 Jan, 2015 - 30 Dec, 2015</strong>
+                                    </p>
+
+                                    <div class="chart">
+                                        <!-- Sales Chart Canvas -->
+                                        <img src="img/chart%2003.jpeg" width="100%" height="65%">
+                                    </div>
+                                    <!-- /.chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <p class="text-center">
+                                        <strong>Goal Completion</strong>
+                                    </p>
+
+                                    <div class="progress-group">
+                                        <span class="progress-text">Add Products to Cart</span>
+                                        <span class="progress-number"><b>160</b>/200</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Complete Purchase</span>
+                                        <span class="progress-number"><b>310</b>/400</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Visit Premium Page</span>
+                                        <span class="progress-number"><b>480</b>/800</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Send Inquiries</span>
+                                        <span class="progress-number"><b>250</b>/500</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                                        <h5 class="description-header">$35,210.43</h5>
+                                        <span class="description-text">TOTAL REVENUE</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-yellow"><i
+                                                class="fa fa-caret-left"></i> 0%</span>
+                                        <h5 class="description-header">$10,390.90</h5>
+                                        <span class="description-text">TOTAL COST</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+                                        <h5 class="description-header">$24,813.53</h5>
+                                        <span class="description-text">TOTAL PROFIT</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block">
+                                        <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+                                        <h5 class="description-header">1200</h5>
+                                        <span class="description-text">Visit Customers</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Monthly Sales Report</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                                </button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <i class="fa fa-wrench"></i></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                                        class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="text-center">
+                                        <strong>Sales: 1 Jan, 2015 - 30 Dec, 2015</strong>
+                                    </p>
+
+                                    <div class="chart">
+                                        <!-- Sales Chart Canvas -->
+                                        <img src="img/chart%2002.jpeg" width="100%" height="65%">
+                                    </div>
+                                    <!-- /.chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <p class="text-center">
+                                        <strong>Goal Completion</strong>
+                                    </p>
+
+                                    <div class="progress-group">
+                                        <span class="progress-text">Add Products to Cart</span>
+                                        <span class="progress-number"><b>160</b>/200</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Complete Purchase</span>
+                                        <span class="progress-number"><b>310</b>/400</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Visit Premium Page</span>
+                                        <span class="progress-number"><b>480</b>/800</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="progress-group">
+                                        <span class="progress-text">Send Inquiries</span>
+                                        <span class="progress-number"><b>250</b>/500</span>
+
+                                        <div class="progress sm">
+                                            <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                                        <h5 class="description-header">$35,210.43</h5>
+                                        <span class="description-text">TOTAL REVENUE</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-yellow"><i
+                                                class="fa fa-caret-left"></i> 0%</span>
+                                        <h5 class="description-header">$10,390.90</h5>
+                                        <span class="description-text">TOTAL COST</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block border-right">
+                                        <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+                                        <h5 class="description-header">$24,813.53</h5>
+                                        <span class="description-text">TOTAL PROFIT</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="description-block">
+                                        <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+                                        <h5 class="description-header">1200</h5>
+                                        <span class="description-text">Visit Customers</span>
+                                    </div>
+                                    <!-- /.description-block -->
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+
+
+            <!--&lt;!&ndash; /.row &ndash;&gt;-->
+        </section>
+        <!--/.content -->
+    </div>
+    <!--&lt;!&ndash; /.content-wrapper &ndash;&gt;-->
+
+    <!--=============Customer=================        -->
+    <div id="customer" class="content-wrapper">
+        <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+        <section class="content-header">
+            <h1>
+                Customers
+                <small>POS System 2.0</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li class="active">Customers</li>
+            </ol>
+        </section>
+
+        <!--&lt;!&ndash; Main content &ndash;&gt;-->
+        <!--<section class="content">-->
+        <!--&lt;!&ndash; Info boxes &ndash;&gt;-->
+
+        <div class="info-box" style="margin-top: 20px">
+
+            <div class="jumbotron bg-light"
+                 style="width: 100%; height: 0px; background-color:white; margin-left:4%;height: 20px">
+
+                <!--<button class="btn btn-success "style="margin-top:-30px">New Customer</button>-->
+                <button type="button" class="btn btn-success" style="margin-top: -30px" data-toggle="modal"
+                        data-target="#myModal">New
+                    Customer
+                </button>
+
+                <button type="button" onclick="viewAllCus()" class="btn btn-warning " style="margin-top: -30px">View All
+                    Customers
+                </button>
+            </div>
+
+
+            <form class="container-fluid">
+
+                <div class="panel panel-default col-md-4 " style="margin-top: -30px">
+                    <div class="panel-heading bg-blue">Customer Searching</div>
+                    <div class="panel-body " style="height: 120px">
+                        <input placeholder="NIC/Tp/Name" class="form-control" id="searchtxt">
+                        <div class="panel-body" style="margin-top: 10px">
+                            <button type="button" onclick="cusSearching()" class="btn btn-primary">Search</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="jumbotron bg-light col-md-8"
+                     style="width: 100%; height: 0px; background-color:white; margin-left: -15px">
+                    <button id="delcus" type="button" class="btn btn-success" style="margin-top: -30px">Delete</button>
+                    <button id="editcus" type="button" class="btn btn-danger" style="margin-top: -30px">Edit</button>
+                    <button id="cusD" type="button" class="btn btn-info" style="margin-top: -30px">Details</button>
+                    <button type="button" class="btn btn-warning" style="margin-top: -30px" onclick="clearField();">
+                        Clear
+                    </button>
+
+
+                </div>
+                <!--Search Result-->
+
+                <div id="cusSearR" class="panel panel-success col-md-6" style="display: none">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Search Resaults</h5>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="form-control">Name :<span id="cname1">Supun Nanayakkara</span></label>
+                            <label class="form-control">Age :<span id="cage1">20</span></label>
+                            <label class="form-control">Tp :<span id="cutp1">0717999676</span></label>
+                            <label class="form-control">Salary :<span id="csalary1">100 000</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Customer Edit-->
+                <div class="modal fade" id="cusEdit" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ">Customer Edit</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Name :<span id="cname">Supun Nanayakkara</span></label>
+                                    <input id="custName" type="text" class="form-control">
+                                    <label>Age :<span id="cage">20</span></label>
+                                    <input id="custAge" type="text" class="form-control">
+                                    <label>Tp :<span id="cutp">0717999676</span></label>
+                                    <input id="custTp" type="text" class="form-control">
+                                    <label>Salary :<span id="csalary">1000 000</span></label>
+                                    <input id="custSalary" type="text" class="form-control">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" id="cusUpdate">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </section>
+
+            </form>
+            <table class="table" id="tab1">
+                <thead class="bg-blue">
+                <tr>
+                    <!--<th scope="col">#</th>-->
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Tp</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tbo">
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+    </div>
+
+    </section>
+    <!--/.content -->
+</div>
+
+<!--=======================Items==========================-->
+
+<div id="Item" class="content-wrapper">
+    <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+    <section class="content-header">
+        <h1>
+            Items
+            <small>POS System 2.0</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">Items</li>
+        </ol>
+    </section>
+
+    <!--&lt;!&ndash; Main content &ndash;&gt;-->
+    <!--<section class="content">-->
+    <!--&lt;!&ndash; Info boxes &ndash;&gt;-->
+
+    <div class="info-box" style="margin-top: 20px">
+
+        <div class="jumbotron bg-light "
+             style="width: 100%; height: 0px; background-color:white; margin-left:4%;height: 20px">
+            <!--<button class="btn btn-success "style="margin-top:-30px">New Item</button>-->
+            <button type="button" class="btn btn-success" style="margin-top: -30px" data-toggle="modal"
+                    data-target="#IModel">New Item
+            </button>
+
+
+            <button type="button" onclick="viewAllIte()" class="btn btn-warning " style="margin-top: -30px">View All
+                Items
+            </button>
+        </div>
+
+
+        <form class="container-fluid">
+
+            <div class="panel panel-default col-md-4" style="margin-top: -30px">
+                <div class="panel-heading bg-blue">Items Searching</div>
+                <div class="panel-body " style="height: 120px">
+                    <input type="text" placeholder="NIC/Tp/Name" class="form-control" id="searchtxtitem">
+                    <div class="panel-body" style="margin-top: 10px">
+                        <button type="button" onclick="itemSearching()" class="btn btn-primary">Search</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="jumbotron bg-light col-md-8"
+                 style="width: 100%; height: 0px; background-color:white; margin-left: -15px">
+                <button type="button" id="deleteitem" class="btn btn-success" style="margin-top: -30px">Delete</button>
+                <button type="button" id="edititem" class="btn btn-danger" style="margin-top: -30px">Edit</button>
+                <button type="button" data-toggle="modal" data-target="#iteDe" class="btn btn-info"
+                        style="margin-top: -30px">Details
+                </button>
+                <button type="button" class="btn btn-warning" style="margin-top: -30px" onclick="iteSection()">Clear
+                </button>
+
+
+            </div>
+            <!--Search Resalt-->
+
+            <div id="iteSearR" class="panel panel-success col-md-6" style="display: none">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Search Results</h5>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="form-control">Name :<span id="itemN">Lux Soap</span></label>
+                        <label class="form-control">Price :<span id="itemPri">50</span></label>
+                        <label class="form-control">Quentity :<span id="itemQt">200</span></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <table class="table" id="tab2">
+                <thead class="bg-blue">
+                <tr>
+                    <!--<th scope="col">#</th>-->
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Price</th>
+                    <th scope="col">Item Quantity</th>
+
+                </tr>
+                </thead>
+                <tbody id="tbo2">
+
+                </tbody>
+            </table>
+
+
+            </section>
+
+        </form>
+
+    </div>
+    <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+</div>
+
+</section>
+<!--/.content -->
+</div>
+
+<!--&lt;!&ndash;======================Orders========================&ndash;&gt;-->
+<br>
+<div id="od" class="content-wrapper">
+    <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+    <section class="content-header" style="margin-top: -20px">
+        <h1>
+            Orders
+            <small>POS System 2.0</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">Orders</li>
+        </ol>
+    </section>
+
+    <div class="container-fluid" style="background-color: white;margin-top: 15px">
+        <div class="row" style="margin-top: 15px">
+            <div class="col-sm-6">
+                <div class="card, panel panel-default">
+                    <div class="panel-heading bg-blue">Customer Details</div>
+                    <div class="panel-body">
+                        <form>
+
+                            <label class="lbl">Customer</label>
+
+                            <!--<select class="styleSelect">-->
+                            <!--<option>Name</option>-->
+                            <!--<option>Item ID</option>-->
+                            <!--</select>-->
+                            <select name="item" id="sele" class="form-control col-sm-3">
+                            </select>
+
+                            <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                            <button type="button" id="newCusB" class="btn btn-success">Add new Customer</button>
+
+
+                            <div class="form-group">
+                                <label class="lbl">Address</label>
+                                <input id="addr" type="text" class="form-control" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="lbl">Telephone</label>
+                                <input id="tel" type="text" class="form-control" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="lbl">CreditLimit</label>
+                                <input id="cref" type="text" class="form-control" aria-describedby="emailHelp">
+                            </div>
+
+                        </form>
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card, panel panel-default">
+                    <div class="panel-heading bg-blue">Item Select</div>
+                    <div class="panel-body">
+                        <form>
+
+                            <label class="lbl">Item</label>
+                            <!--<select class="styleSelect" style="width: 100%">-->
+                            <!--<option>Lifebouy Soap</option>>-->
+                            <!--<option>Maggie Deviled Chicken Noodles</option>>-->
+                            <!--<option>Coca-Cola</option>>-->
+                            <!--</select>-->
+                            <select id="itsl" name="item" class="form-control">
+                            </select>
+
+                            <div class="form-group">
+                                <label class="lbl">Price</label>
+                                <input id="pru" type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="lbl">QTY</label>
+                                <input id="qun" type="text" class="form-control">
+                            </div>
+
+                            <hr>
+                            <label id="lbl">Order Item</label>
+                            <hr>
+
+                            <div class="form-group">
+                                <label class="lbl">Order QTY</label>
+                                <input id="oqun" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button onclick="addOrd()" id="addO" type="button" class="btn btn-danger al">Add Order
+                                </button>
+                            </div>
+
+                        </form>
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card, panel panel-default">
+                    <div class="panel-heading bg-blue">Invoice Details</div>
+                    <div class="panel-body">
+                        <form>
+
+                            <!--<div class="form-group" >-->
+                            <!--<label class="lbl">Customer</label>-->
+                            <!--<input type="email" class="form-control" aria-describedby="emailHelp" >-->
+                            <!--</div>-->
+
+                            <div class="form-group">
+                                <label class="lbl">Date</label>
+                                <input type="date" class="form-control styleDate">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="lbl">Order ID</label>
+                                <input type="text" id="oids" class="form-control" aria-describedby="emailHelp"
+                                       placeholder="O001">
+                            </div>
+                        </form>
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+
+            <table class="table table-bordered" id="tab5">
+                <thead class="bg-blue">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Item Quantity</th>
+                    <th class="tot">Tot</th>
+                </tr>
+                </thead>
+                <tbody id="tbo1">
+
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <section class="content-box-2">
+        <h2 id="tt">Total : <span id="totalP">00.0</span><span class="rs">Rs//=</span></h2>
+        <br><br>
+        <label>Cash</label>
+        <input id="inputC" type="text" class=" styleTextInput" style="width: 300px;">
+        <label>Balance</label>
+        <input id="balanceD" type="text" class=" styleTextInput" style="width: 300px;">
+        <label>Discount</label>
+        <input id="discc" type="text" class=" styleTextInput" style="width: 300px;">
+    </section>
+    <br>
+    <br>
+    <section id="order-last-buttons" style="margin-top: -20px">
+        <button type="button" class="btn btn-primary" onclick="fulltc()">Clear</button>
+        <button type="button" class="btn btn-secondary" id="mainB2" style="float: right">Renew Order</button>
+        <button type="button" class="btn btn-success" id="mainB">Submit Order</button>
+    </section>
+
+
+    <!-- Main content -->
+
+    </section>
+    <div class="modal fade" id="orderC" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" id="mode">
+                <div class="modal-header bg-primary">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title ">New Customer</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group ">
+                        <label>Name :</label>
+                        <input type="text" class="form-control">
+                        <label>Age :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group form-inline ">
+                        <label>Tp :</label>
+                        <input type="text" class="form-control">
+                        <label>Salary :</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--table Item Delete-->
+    <div class="modal fade" id="tabI" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content b">
+                <div class="modal-header bg-danger dc">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirm</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do You Want To Delete This Item..?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="tid" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.content -->
+</div>
+
+<!--//////////////////////////////////-->
+
+<!--================+Employee==========-->
+<div id="emp" class="content-wrapper">
+    <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+    <section class="content-header">
+        <h1>
+            Employees
+            <small>POS System 2.0</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">Employee</li>
+        </ol>
+    </section>
+
+    <!--&lt;!&ndash; Main content &ndash;&gt;-->
+    <!--<section class="content">-->
+    <!--&lt;!&ndash; Info boxes &ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+</div>
+
+</section>
+<!--/.content -->
+</div>
+
+
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Dan Version</b> 2.4.0
+    </div>
+    <strong>Copyright &copy; 2018 Developed by Dan Steefen.</strong> All rights
+    reserved.
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane" id="control-sidebar-home-tab">
+            <!---->
+            <!-- /.control-sidebar-menu -->
+
+            <!---->
+            <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+            <form method="post">
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" style="background-color: #1e282c; color: white" class="form-control"
+                               placeholder="Search...">
+                        <span class="input-group-btn">
+                <button type="submit" name="search" style="background-color: #1e282c; color: white; margin-left: 5px"
+                        class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+                    </div>
+                </form>
+                <ul class="sidebar-menu" data-widget="tree">
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-circle"></i> <span>Create Account</span>
+                            <span class="pull-right-container">
+
+            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cogs"></i>
+                            <span>General Settings</span>
+                            <span class="pull-right-container">
+
+            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-plus"></i> <span>Marketing</span>
+                            <span class="pull-right-container">
+
+                        </span>
+                        </a>
+
+                    </li>
+
+                    </span>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-md"></i> <span>Privacy and Policy</span>
+                            <span class="pull-right-container">
+
+                        </span>
+                        </a>
+                    </li>
+
+                    </span>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i> <span>Helps</span>
+                            <span class="pull-right-container">
+                        </span>
+
+                        </a>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-link"></i> <span>Links</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-power-off"></i> <span>Logout</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-info"></i> <span>About</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+
+
+                    </span>
+
+                    </span>
+                    <!---->
+
+                    </li>
+
+                </ul>
+            </form>
+        </div>
+        <!--/.tab-pane -->
+    </div>
+</aside>
+ss
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
+
+</div>
+
+<!--New Customer Adding-->
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" id="mode">
+            <div class="modal-header bg-primary">
+
+                <h4 class="modal-title " style="color: white"><b>New Customer</b></h4>
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group ">
+                    <!--<label for="name">Name :</label>-->
+                    <label>Name</label>
+
+                    <input id="cusNameTxt" type="text" class="form-control">
+
+                    <!--<label for="name">Age :</label>-->
+                    <label>Age</label>
+                    <input id="cusAgeTxt" type="text" class="form-control">
+
+                </div>
+                <div class="form-group ">
+                    <!--<label for="name">Tp :</label>-->
+                    <label>Telephone Number</label>
+                    <input id="cusTptxt" type="text" class="form-control">
+                    <!--<label for="name">Salary :</label>-->
+                    <label>Salary</label>
+                    <input id="cusSalTxt" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="customerAdd()" class="btn btn-success"><b>Save</b></button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><b>Close</b></button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Customer Delete Model-->
+<div class="modal fade" id="cusDelete" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content b">
+            <div class="modal-header bg-danger dc">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirm</h4>
+            </div>
+            <div class="modal-body">
+                <p>Do You Want To Delete This Customer..?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="crd" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--New Item Adding-->
+
+<div class="modal fade" id="IModel" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" id="mode">
+            <div class="modal-header bg-primary">
+
+                <h4 class="modal-title " style="color: white"><b>New Item</b></h4>
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group ">
+                    <!--<label for="name">Name :</label>-->
+                    <label>Name</label>
+
+                    <input id="itemNametxt" type="text" class="form-control">
+
+                    <!--<label for="name">Age :</label>-->
+                    <label>Price</label>
+                    <input id="itemPricetxt" type="text" class="form-control">
+
+                </div>
+                <div class="form-group ">
+                    <!--<label for="name">Tp :</label>-->
+                    <label>Quantity</label>
+                    <input id="itemQtytxt" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" onclick="customerAdd()" class="btn btn-success" id="btnsavecustomer"><b>Save</b>-->
+
+                <button type="button" class="btn btn-success" onclick="itemAdd()" id="itemSave"><b>Save</b></button>
+
+                <!--<button type="button" id="btnsavecustomer" class="btn btn-primary" style="margin-top: 20px">Save Customer</button>-->
+
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><b>Close</b></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Item Delete-->
+<div class="modal fade" id="itemDelete" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content b">
+            <div class="modal-header bg-danger dc">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirm</h4>
+            </div>
+            <div class="modal-body">
+                <p>Do You Want To Delete This Item..?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="ird" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Item Edit-->
+<div class="modal fade" id="itemEdit" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Item content-->
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title ">Item Edit</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+
+                    <label>Name :<span id="itemNa"> Item Name</span></label>
+                    <input id="itemName" type="text" class="form-control">
+                    <label>Price :<span id="itemPr">Price</span></label>
+                    <input id="itemPrice" type="text" class="form-control">
+                    <label>Quentity :<span id="itemQty">Qty</span></label>
+                    <input id="itemQun" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="updateitem" data-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--Customer Table Save-->
+
+
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap 3.3.7 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="js/fastclick.js"></script>
+<!-- Admin App -->
+<script src="js/adminlte.min.js"></script>
+<!-- Sparkline -->
+<script src="js/jquery.sparkline.min.js"></script>
+<!-- jvectormap  -->
+<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+<!-- SlimScroll -->
+<script src="js/jquery.slimscroll.min.js"></script>
+<!-- ChartJS -->
+<script src="js/Chart.js"></script>
+<!-- Admin dashboard demo (This is only for demo purposes) -->
+<script src="js/pages/dashboard2.js"></script>
+
+<!--&lt;!&ndash;Txt Clear&ndash;&gt;-->
+<!--<script>-->
+<!--function clearField(){-->
+<!--document.getElementById("txt").value="";-->
+<!--document.getElementById("txt1").value="";-->
+
+<!--}-->
+<!--</script>-->
+
+<!--Customer js-->
+
+<script src="controller/CustomerController.js"></script>
+<script src="dto/CustomerDTO.js"></script>
+<script src="db/DBConnection.js"></script>
+<script src="controller/DashboardController.js"></script>
+
+<!--Item js-->
+<script src="controller/ItemController.js"></script>
+<script src="dto/ItemDTO.js"></script>
+
+<script src="controller/ValidationController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="controller/OrderDetailsController.js"></script>
+<script src="dto/OrderDetailsDTO.js"></script>
+<script src="dto/OrderDTO.js"></script>
+
+</body>
+</html>
